@@ -8,9 +8,6 @@ const {
 
 const server = http.createServer((req, res) => {
   const url = req.url;
-  let data = "";
-
-  res.setHeader("Content-Type", "text/html; charset=utf-8");
   switch (url) {
     case "/":
       mainRouteController(res, "/index.html", ".html");
